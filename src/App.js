@@ -51,6 +51,11 @@ const App = () => {
         <Frame
           list={[4, 3, 2, 1, 5]}
           is_active={currentFrame === 4}
+          pivot_bubble={4}
+        />
+        <Frame
+          list={[4, 3, 2, 1, 5]}
+          is_active={currentFrame === 4}
           pivot_bubble={0}
         />
         <Frame
