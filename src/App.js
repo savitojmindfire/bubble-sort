@@ -5,7 +5,7 @@ import Frame from "./components/Frame";
 import useInterval from "./utils";
 
 const App = () => {
-  const [currentFrame, setCurrentFrame] = React.useState(-1);
+  const [currentFrame, setCurrentFrame] = React.useState(0);
   const [play, setPlay] = React.useState(false);
 
   useInterval(() => {
@@ -14,11 +14,16 @@ const App = () => {
     } else {
       setCurrentFrame(-1);
     }
-  }, [(play && 1000) || null]);
+  }, [(play && 1900) || null]);
+
+  const stopEffect = () => {
+    if (currentFrame >= 16) setPlay(false);
+  };
+  React.useEffect(stopEffect, [currentFrame]);
 
   return (
     <div className="App">
-      <div className="input">Input: 5,4,3,2,1</div>
+      <Frame list={[5, 4, 3, 2, 1]} is_active={true} />
       <button
         onClick={() => {
           setPlay(!play);
@@ -99,6 +104,7 @@ const App = () => {
           is_active={currentFrame === 13}
           pivot_bubble={1}
         />
+        <Frame list={[1, 2, 3, 4, 5]} is_active={play} done={true} />
       </div>
     </div>
   );

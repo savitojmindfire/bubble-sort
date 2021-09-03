@@ -1,8 +1,10 @@
 import React from "react";
 import "./bubble.css";
-const Bubble = ({ number, is_pivot, is_compare, is_active }) => {
+const Bubble = ({ number, is_pivot, is_compare, is_active, done }) => {
   const [bubbleClass, setBubbleClass] = React.useState(() => {
-    return ["bubble", (is_pivot && "pivot") || ""].join(" ");
+    return ["bubble", (is_pivot && "pivot") || "", (done && "done") || ""].join(
+      " "
+    );
   });
 
   const compareEffect = () => {
@@ -11,6 +13,7 @@ const Bubble = ({ number, is_pivot, is_compare, is_active }) => {
         "bubble",
         (is_pivot && "pivot") || "",
         (is_active && is_compare && "compare") || "",
+        (done && "done") || "",
       ].join(" ")
     );
   };

@@ -4,7 +4,7 @@ import "./frame.css";
 import Bubble from "./Bubble";
 import useInterval from "../utils";
 
-const Frame = ({ list, is_active, pivot_bubble }) => {
+const Frame = ({ list, is_active, pivot_bubble, done }) => {
   const [frameClass, setFrameClass] = React.useState("frame");
   const [currentBubble, setCurrentBubble] = React.useState(
     (is_active && pivot_bubble + 2) || -1
@@ -23,6 +23,7 @@ const Frame = ({ list, is_active, pivot_bubble }) => {
     setCurrentBubble((is_active && pivot_bubble + 1) || -1);
   };
   React.useEffect(activeEffect, [is_active]);
+  if (!is_active) return null;
 
   return (
     <div className={frameClass}>
@@ -32,6 +33,7 @@ const Frame = ({ list, is_active, pivot_bubble }) => {
           is_active={is_active}
           is_pivot={index === pivot_bubble}
           is_compare={index === currentBubble}
+          done={done}
         />
       ))}
     </div>
