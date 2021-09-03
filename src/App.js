@@ -82,7 +82,7 @@ const App = () => {
         <Frame
           list={[1, 2, 3, 4, 5]}
           is_active={currentFrame === 10}
-          pivot_bubble={2}
+          pivot_bubble={0}
         />
       </div>
     </div>
