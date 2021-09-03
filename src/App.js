@@ -75,88 +75,14 @@ const App = () => {
           pivot_bubble={0}
         />
         <Frame
-          list={[5, 4, 3, 2, 1]}
+          list={[2, 1, 3, 4, 5]}
           is_active={currentFrame === 9}
           pivot_bubble={1}
         />
         <Frame
-          list={[5, 4, 3, 2, 1]}
+          list={[1, 2, 3, 4, 5]}
           is_active={currentFrame === 10}
           pivot_bubble={2}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 11}
-          pivot_bubble={3}
-        />
-
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 12}
-          pivot_bubble={0}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 13}
-          pivot_bubble={1}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 14}
-          pivot_bubble={2}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 15}
-          pivot_bubble={3}
-        />
-
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 16}
-          pivot_bubble={0}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 17}
-          pivot_bubble={1}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 18}
-          pivot_bubble={2}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 19}
-          pivot_bubble={3}
-        />
-
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 20}
-          pivot_bubble={0}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 21}
-          pivot_bubble={1}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 22}
-          pivot_bubble={2}
-        />
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 23}
-          pivot_bubble={3}
-        />
-
-        <Frame
-          list={[5, 4, 3, 2, 1]}
-          is_active={currentFrame === 24}
-          pivot_bubble={4}
         />
       </div>
     </div>
