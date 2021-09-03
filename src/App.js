@@ -55,48 +55,48 @@ const App = () => {
         />
         <Frame
           list={[4, 3, 2, 1, 5]}
-          is_active={currentFrame === 4}
+          is_active={currentFrame === 5}
           pivot_bubble={0}
         />
         <Frame
           list={[3, 4, 2, 1, 5]}
-          is_active={currentFrame === 5}
+          is_active={currentFrame === 6}
           pivot_bubble={1}
         />
         <Frame
           list={[3, 2, 4, 1, 5]}
-          is_active={currentFrame === 6}
+          is_active={currentFrame === 7}
           pivot_bubble={2}
         />
         <Frame
           list={[3, 2, 1, 4, 5]}
-          is_active={currentFrame === 7}
+          is_active={currentFrame === 8}
           pivot_bubble={3}
         />
 
         <Frame
           list={[2, 3, 1, 4, 5]}
-          is_active={currentFrame === 8}
+          is_active={currentFrame === 9}
           pivot_bubble={0}
         />
         <Frame
           list={[2, 3, 1, 4, 5]}
-          is_active={currentFrame === 9}
+          is_active={currentFrame === 10}
           pivot_bubble={1}
         />
         <Frame
           list={[2, 1, 3, 4, 5]}
-          is_active={currentFrame === 10}
+          is_active={currentFrame === 11}
           pivot_bubble={2}
         />
         <Frame
           list={[2, 1, 3, 4, 5]}
-          is_active={currentFrame === 11}
+          is_active={currentFrame === 12}
           pivot_bubble={0}
         />
         <Frame
           list={[1, 2, 3, 4, 5]}
-          is_active={currentFrame === 12}
+          is_active={currentFrame === 13}
           pivot_bubble={1}
         />
       </div>
